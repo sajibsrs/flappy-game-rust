@@ -14,4 +14,12 @@ git clone git@github.com:sajibsrs/php-framework.git
 cargo run
 ```
 
-## Building debug and release version
+## Building debug
+```bash
+cargo build
+```
+
+## Building release build
+```bash
+cargo build --release
+```
