@@ -1,8 +1,11 @@
+mod player;
 mod state;
 mod mode;
 
 mod prelude {
+    pub use crate::player::*;
     pub use crate::state::*;
+    pub use crate::mode::*;
     pub use bracket_lib::prelude::*;
 }
 
