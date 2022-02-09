@@ -1,5 +1,9 @@
 [package]
 name = "flappy"
+authors = ["Sajidur Rahman"]
+license = "MIT"
+license-file = "LICENSE"
+radme = "README.md"
 version = "0.1.0"
 edition = "2021"
 
