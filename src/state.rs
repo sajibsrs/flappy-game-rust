@@ -1,8 +1,10 @@
-use crate::{prelude::*, mode::GameMode};
+use crate::prelude::*;
 
 /// Game state
 pub struct State {
+    player: Player,
     mode: GameMode,
+    frame_time: f32,
 }
 
 impl State {
@@ -10,6 +12,8 @@ impl State {
     pub fn new() -> Self {
         State {
             mode: GameMode::Menu,
+            player: Player::new(5, 25),
+            frame_time: 0.0,
         }
     }
 
