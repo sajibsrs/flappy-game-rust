@@ -1,7 +1,15 @@
-use crate::prelude::*;
+use crate::{prelude::*, mode::GameMode};
 
 pub struct State {
+    mode: GameMode,
+}
 
+impl State {
+    pub fn new() -> Self {
+        State {
+            mode: GameMode::Menu,
+        }
+    }
 }
 
 impl GameState for State {
