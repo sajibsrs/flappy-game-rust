@@ -1,4 +1,5 @@
 mod state;
+mod mode;
 
 mod prelude {
     pub use crate::state::*;
@@ -12,5 +13,5 @@ fn main() -> BError {
         .with_title("Flappy")
         .build()?;
 
-    main_loop(context, State{})
+    main_loop(context, State::new())
 }
