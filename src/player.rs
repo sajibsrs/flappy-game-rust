@@ -37,6 +37,6 @@ impl Player {
 
     /// Moves player upward.
     pub fn flap(&mut self) {
-        self.velocity = -2.0;
+        self.velocity = -2.5;
     }
 }
