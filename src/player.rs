@@ -2,9 +2,9 @@ use crate::prelude::*;
 
 /// Player character of the game.
 pub struct Player {
-    x: i32,
-    y: i32,
-    velocity: f32,
+    pub x: i32,
+    pub y: i32,
+    pub velocity: f32,
 }
 
 impl Player {
@@ -18,7 +18,7 @@ impl Player {
     
     /// Renders the player on the screen.
     pub fn render(&mut self, ctx: &mut BTerm) {
-        ctx.set(0, self.y, YELLOW, BLACK, to_cp437('@'));
+        ctx.set(20, self.y, YELLOW, BLACK, to_cp437('@'));
     }
 
     /// Moves player down with time and other screen objects moves left from right.
