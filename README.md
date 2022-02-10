@@ -7,7 +7,7 @@
 
 ## Cloning project
 ```bash
-git clone git@github.com:sajibsrs/php-framework.git
+git clone git@github.com:sajibsrs/flappy-game-rust.git
 ```
 
 ## Running project
