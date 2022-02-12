@@ -1,8 +1,8 @@
 use crate::prelude::*;
 
-const SCREEN_WIDTH: i32 = 80;
-const SCREEN_HEIGHT: i32 = 50;
-const FRAME_DURATION: f32 = 50.0;
+pub const SCREEN_WIDTH: i32 = 80;
+pub const SCREEN_HEIGHT: i32 = 50;
+pub const FRAME_DURATION: f32 = 50.0;
 
 /// Game state
 pub struct State {
