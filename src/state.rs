@@ -7,8 +7,10 @@ pub const FRAME_DURATION: f32 = 50.0;
 /// Game state
 pub struct State {
     player: Player,
+    obstacle: Obstacle,
     mode: GameMode,
     frame_time: f32,
+    score: i32,
 }
 
 impl State {
@@ -16,8 +18,10 @@ impl State {
     pub fn new() -> Self {
         State {
             mode: GameMode::Menu,
+            obstacle: Obstacle::new(SCREEN_WIDTH, 0),
             player: Player::new(5, 25),
             frame_time: 0.0,
+            score: 0,
         }
     }
 
