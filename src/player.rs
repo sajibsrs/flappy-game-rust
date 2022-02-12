@@ -18,7 +18,7 @@ impl Player {
     
     /// Renders the player on the screen.
     pub fn render(&mut self, ctx: &mut BTerm) {
-        ctx.set(5, self.y, YELLOW, BLACK, to_cp437('@'));
+        ctx.set(0, self.y, YELLOW, BLACK, to_cp437('@'));
     }
 
     /// Moves player down with time and other screen objects moves left from right.
