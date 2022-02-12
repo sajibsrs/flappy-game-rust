@@ -61,7 +61,9 @@ impl State {
     pub fn restart(&mut self) {
         self.player = Player::new(5, 25);
         self.frame_time = 0.0;
+        self.obstacle = Obstacle::new(SCREEN_WIDTH, 0);
         self.mode = GameMode::Play;
+        self.score = 0;
     }
 
     /// Action when player is dead
@@ -69,6 +71,16 @@ impl State {
         ctx.cls();
         ctx.print_centered(5, "You died!");
         ctx.print_centered(7, &format!("Your score is {}", self.score));
+        ctx.print_centered(9, "(P) Play Game");
+        ctx.print_centered(11, "(Q) Quit Game");
+
+        if let Some(key) = ctx.key {
+            match key {
+                VirtualKeyCode::P => self.restart(),
+                VirtualKeyCode::Q => ctx.quitting = true,
+                _ => {}
+            }
+        }
     }
 
     /// Renders main menu and actions
