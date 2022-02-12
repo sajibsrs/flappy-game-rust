@@ -66,7 +66,9 @@ impl State {
 
     /// Action when player is dead
     pub fn dead(&mut self, ctx: &mut BTerm) {
-        self.main_menu(ctx);
+        ctx.cls();
+        ctx.print_centered(5, "You died!");
+        ctx.print_centered(7, &format!("Your score is {}", self.score));
     }
 
     /// Renders main menu and actions
