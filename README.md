@@ -3,8 +3,6 @@
 * Experimenting with different related features of rust.
 * Organizing project, files and code.
 
-*Note: Under construction. Thiangs are not stable yet for testing.*
-
 ## Cloning project
 ```bash
 git clone git@github.com:sajibsrs/flappy-game-rust.git
