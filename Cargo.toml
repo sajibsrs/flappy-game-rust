@@ -1,9 +1,8 @@
 [package]
 name = "flappy"
 authors = ["Sajidur Rahman"]
-license = "MIT"
 license-file = "LICENSE"
-radme = "README.md"
+readme = "README.md"
 version = "0.1.0"
 edition = "2021"
 
@@ -11,3 +10,6 @@ edition = "2021"
 
 [dependencies]
 bracket-lib = "~0.8.1"
+
+[profile.release]
+opt-level = 3
